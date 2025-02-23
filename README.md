@@ -66,20 +66,26 @@ This is a simple Flask application that fetches and displays weather information
 
 ### Using Kubernetes
 
-1. Load the Docker image into Minikube:
+1. Start Minikube:
+
+    ```sh
+    minikube start
+    ```
+
+2. Load the Docker image into Minikube:
 
     ```sh
     minikube image load weather-app:latest
     ```
 
-2. Apply the Kubernetes deployment and service configurations:
+3. Apply the Kubernetes deployment and service configurations:
 
     ```sh
     kubectl apply -f deployment.yaml
     kubectl apply -f service.yaml
     ```
 
-3. Access the application using the external IP provided by the Kubernetes service.
+4. Access the application using the external IP provided by the Kubernetes service.
 
 ### Verify the deployment:
 
