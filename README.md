@@ -75,6 +75,20 @@ This is a simple Flask application that fetches and displays weather information
 
 2. Access the application using the external IP provided by the Kubernetes service.
 
+### Verify the deployment:
+
+    ```sh
+    kubectl get deployments
+    kubectl get pods
+    kubectl get svc
+    ```
+
+### Access the service:
+
+    ```sh
+    minikube service weather-app-service
+    ```
+
 ## File Structure
 
 ```

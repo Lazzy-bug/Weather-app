@@ -14,7 +14,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 5000
 
 # Define environment variable
-ENV NAME World
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
