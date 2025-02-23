@@ -20,7 +20,7 @@ This is a simple Flask application that fetches and displays weather information
 1. Clone the repository:
 
     ```sh
-    https://github.com/Lazzy-bug/Weather-app.git
+    git clone https://github.com/Lazzy-bug/Weather-app.git
     cd weather-app
     ```
 
