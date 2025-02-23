@@ -15,6 +15,6 @@ spec:
       containers:
       - name: weather-app
         image: weather-app:latest
-        imagePullPolicy: Never
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000

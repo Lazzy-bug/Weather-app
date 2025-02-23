@@ -20,7 +20,7 @@ This is a simple Flask application that fetches and displays weather information
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/Lazzy-bug/Weather-app.git
+    git clone https://github.com/yourusername/weather-app.git
     cd weather-app
     ```
 
@@ -66,14 +66,20 @@ This is a simple Flask application that fetches and displays weather information
 
 ### Using Kubernetes
 
-1. Apply the Kubernetes deployment and service configurations:
+1. Load the Docker image into Minikube:
+
+    ```sh
+    minikube image load weather-app:latest
+    ```
+
+2. Apply the Kubernetes deployment and service configurations:
 
     ```sh
     kubectl apply -f deployment.yaml
     kubectl apply -f service.yaml
     ```
 
-2. Access the application using the external IP provided by the Kubernetes service.
+3. Access the application using the external IP provided by the Kubernetes service.
 
 ### Verify the deployment:
 
