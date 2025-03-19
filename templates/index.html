@@ -8,11 +8,11 @@
 </head>
 <body>
     <h1>Weather App</h1>
+    <div id="weather">
     <form action="/" method="get">
         <input type="text" name="city" placeholder="Enter city name">
         <button type="submit">Search</button>
     </form>
-    <div id="weather">
         <p>City: {{ weather_data.city }}</p>
         <p>Temperature: {{ weather_data.temperature }}</p>
         <p>Condition: {{ weather_data.condition }}</p>
